@@ -1,3 +1,9 @@
+# Reference link: 
+# https://blog.csdn.net/weixin_39726347/article/details/87070795
+# https://blog.csdn.net/weixin_39726347/article/details/86934797
+# https://www.cnblogs.com/lucky9322/p/13648282.html
+
+
 # 
 docker run -d -p 5900:5900 -p 5901:5901 --name="vnc-centos7" --privileged=true centos:7 /usr/sbin/init
 
