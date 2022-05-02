@@ -1,8 +1,13 @@
 # IPTABLES
 
 ```
+# LIST rule for a specific chain
+iptables -t nat -nvL DOCKER
+
 # Allow SSH
-iptables -A INPUT -s 10.20.30.40/24 -p tcp --dport 22 -j ACCEPT
+iptables -I INPUT -s 10.20.30.40/24 -p tcp --dport 22 -j ACCEPT
+# -A: Append
+# -I: Insert
 
 # Drop from 10.10.10.10
 iptables -A INPUT -s 10.10.10.10 -j DROP
