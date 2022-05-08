@@ -109,3 +109,25 @@ docker cp <source file> <cotnainer name>:<destination path in container>
 ```
 
 ```
+
+###########################################################################
+
+# Resource Limit CPU
+```
+Completely Fair Scheduler (CFS)
+
+docker container run --cpuset-cpus=0-1 <image name> # reserve CPU for 0 - 1
+docker container run --cpus=2.5 <image name>
+docker container update --cpus=0.5 <image name>
+```
+
+# Resource Limit memory
+```
+docker container run --memory=512m <image name>
+docker container run --memory=512m --memory-swap=512m <image name>
+```
+
+# Docker Networking
+```
+
+```
